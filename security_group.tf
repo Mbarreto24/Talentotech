@@ -1,6 +1,6 @@
 resource "aws_security_group" "sg_ssh" {
   name        = "SG Acceso SSH"
-  description = "Permite el acceso SSH desde cualquier lugar"
+  description = "Permite el acceso SSH desde cualquier lugar del mundo"
   vpc_id      = aws_vpc.VPC_proyecto.id
 
   tags = {
