@@ -4,6 +4,7 @@ resource "aws_vpc" "VPC_proyecto" {
 
   tags = {
     Name = "VPC_proyecto"
+    Proyecto = "Mintic"
   }
 }
 resource "aws_subnet" "Subnet_public" {
@@ -13,6 +14,7 @@ resource "aws_subnet" "Subnet_public" {
 
   tags = {
     Name = "Subnet_ec2"
+    Proyecto = "Mintic"
   }
 }
 
@@ -22,6 +24,7 @@ resource "aws_internet_gateway" "Gw_proyecto" {
 
   tags = {
     Name = "Gw_proyecto"
+    Proyecto = "Mintic"
   }
 }
 resource "aws_route_table" "rt_default_proyecto" {
@@ -33,6 +36,7 @@ resource "aws_route_table" "rt_default_proyecto" {
 }
     tags = {
         Name = "rt_default_proyecto"
+        Proyecto = "Mintic"
     }
  }
 
